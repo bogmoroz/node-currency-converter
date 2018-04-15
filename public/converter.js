@@ -6,7 +6,6 @@ function round(value, decimals) {
 
 module.exports = function(baseName, targetName, baseSum) {
     fixer.base(baseName).then(function(result){
-        console.log(result.date);
         var exchangeRate = result.rates[targetName];
         var covertedSum = round(baseSum * exchangeRate, 2);
         $(".outputSum").val(covertedSum);
