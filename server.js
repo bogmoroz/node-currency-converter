@@ -1,15 +1,19 @@
 'use strict';
 
-const express = require('express');
+var express = require('express');
+var path = require('path');
 
 // Constants
 const PORT = 8085;
 const HOST = '127.0.0.1';
 
 // App
-const app = express();
+var app = express();
+
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
-  res.send('Hello world\n');
+  res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.listen(PORT, HOST);

@@ -1,13 +1,18 @@
 {
-    "name": "currencyApp",
-    "version": "1.0.0",
-    "description": "Node.js app on Docker",
-    "author": "Bogdan Moroz <Bogdan.Moroz@edu.xamk.fi>",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "dependencies": {
-      "express": "^4.16.1"
-    }
+  "name": "currencyApp",
+  "version": "1.0.0",
+  "description": "Node.js app on Docker",
+  "author": "Bogdan Moroz <Bogdan.Moroz@edu.xamk.fi>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "path": "0.12.7",
+    "fixer-io-node": "~1.0.2"
+  },
+  "devDependencies": {
+    "browserify": "latest"
   }
+}

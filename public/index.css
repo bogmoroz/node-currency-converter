@@ -1,0 +1,20 @@
+.headline {
+    color: #326de6;
+    font-family: 'Gaegu', cursive;
+    font-size: 70px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currencyInputDiv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inputSum, .outputSum {
+    width: 150px;
+}

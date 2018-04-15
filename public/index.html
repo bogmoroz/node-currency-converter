@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="headline">CONVERTER</h1>
+        
+        <div class="currencyInputDiv">
+            <input type="number" min="0" class="inputSum">
+            <select class="inputCurrency">
+                <option value="eur">EUR</option>
+                <option value="usd">USD</option>
+                <option value="rub">RUB</option>
+                <option value="sek">SEK</option>
+            </select>
+        </div>
+
+        <button class="convertButton">GO!</button>
+       
+        <div class="currencyInputDiv">
+            <input type="number" min="0" class="outputSum">
+            <select class="outputCurrency">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="rub">RUB</option>
+                <option value="sek">SEK</option>
+            </select>
+        </div>
+        
+        <label class="rateDate"></label>
+        <label>powered by fixer.io</label>
+
+    </div>
+    <script src="/bundle.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
